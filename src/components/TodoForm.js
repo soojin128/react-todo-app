@@ -30,27 +30,27 @@ function TodoForm(props) {
       <>
       <input 
       type='text' 
-      placeholder='Update your item' 
+      placeholder='스케줄 수정' 
       value={input} 
       name='text' 
       className='todo-input edit'
       onChange={handleChange}
       ref={inputRef}
       />
-      <button className='todo-button edit'>Update</button>
+      <button className='todo-button edit'>수정</button>
       </>
       ) : (
       <>
       <input 
         type='text' 
-        placeholder='Add a todo' 
+        placeholder='스케줄' 
         value={input} 
         name='text' 
         className='todo-input'
         onChange={handleChange}
         ref={inputRef}
         />
-        <button className='todo-button'>Add todo</button>
+        <button className='todo-button'>추가</button>
         </>
         )}
     </form>
